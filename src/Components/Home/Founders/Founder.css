@@ -1,0 +1,59 @@
+/* Base styles */
+*{
+  margin: 0%;
+  padding: 0%;
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    padding: 0 20px;
+  }
+  
+  .f1, .f2 {
+    flex: 1 1 300px; /* Allow items to grow, shrink, and have a maximum width of 300px */
+    margin-bottom: 20px;
+  }
+  
+  .txt {
+    flex: 1 1 30%; /* Allow item to grow, shrink, and take full width */
+    background-color: rgb(171, 119, 255);
+    margin-bottom: 40px;
+    padding: 20px;
+  }
+  
+  #img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
+  
+  .heading {
+    position: relative;
+    bottom: 20px;
+    width: 100%;
+  }
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    .main {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items horizontally */
+    }
+  
+    .f1, .f2 {
+      flex-basis: 100%; /* Make items full width on smaller screens */
+      max-width: 100%; /* Remove maximum width restriction */
+    }
+  
+     .txt {
+      padding: 0%;
+      margin: 0%; 
+    } 
+  
+    .heading {
+      bottom: 10px; /* Adjust bottom position */
+    }
+  }
+  

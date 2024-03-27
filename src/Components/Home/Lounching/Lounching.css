@@ -1,0 +1,46 @@
+.mainpt {
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    margin-bottom: 60px; /* Reduced margin for better spacing */
+    padding: 0 20px; /* Adjusted padding for smaller screens */
+  }
+  
+  .div {
+    width: 100%; /* Set width to full for better responsiveness */
+    padding: 20px; /* Added padding for better spacing */
+    border-radius: 20px;
+    font-size: larger;
+    background-color: green; /* Moved background color here */
+    margin-bottom: 20px; /* Added margin for better spacing */
+  }
+  
+  .div2 img {
+    max-width: 100%; /* Ensure image resizes properly */
+    height: auto;
+  }
+  
+  .div h1 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 10px; /* Added margin for better spacing */
+  }
+  
+  .div p {
+    margin-top: 10px; /* Added margin for better spacing */
+  }
+  
+  @media (min-width: 768px) {
+    .mainpt {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 100px; /* Adjusted padding for larger screens */
+    }
+  
+    .div {
+      width: 45%; /* Reduced width for better spacing between items */
+      margin-bottom: 0; /* Removed margin to prevent extra spacing */
+    }
+  }
+  

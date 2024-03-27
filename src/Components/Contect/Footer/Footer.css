@@ -1,0 +1,25 @@
+  .Footer{
+    display: flex;
+    justify-content: space-evenly;
+    height: 250px;
+    background-color: rgb(231, 231, 231);
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+li{
+    color:gray;
+    cursor: pointer;
+}
+@media screen and(max-width:980px) {
+    .Footer{
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-top: 120px;
+    }
+}
+
+
+
+
+

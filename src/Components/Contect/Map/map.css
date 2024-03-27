@@ -1,0 +1,64 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.Map{
+    display: flex;
+    justify-content: space-between;
+    height: 50vh;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.textarea{
+    height: 70vh;
+    width: 30%;
+    /* background-color: aqua; */
+    margin: 20px auto;
+    border-radius: 4px;
+    padding: 30px;
+border: 1px solid green;
+box-shadow: 5px 5px 5px  gray;
+
+}
+.textarea h1{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    color: rgba(97, 97, 97, 0.896);
+}
+.textarea p{
+    margin: 10px 0%;
+    font-size: small;
+    color: gray;
+}
+textarea{
+    width: 100%;
+    height: 130px;
+    border: 1px solid gray;
+    outline: none;
+    padding: 50px;
+}
+input{
+    height: 35px;
+    width: 100%;
+    border: 1px solid gray;
+    outline: 2px solid rgb(62, 195, 218);
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 980px) {
+    .textarea {
+        width: 70%; /* Adjust the width for smaller screens */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media screen and(max-width:640px){
+    .cards{
+        justify-content: center;
+        
+    }    
+}
